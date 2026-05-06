@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Nolan SICHE-RÉMY</title>
+    <title>Portfolio BTS SIO | Nolan SICHE-RÉMY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,9 +13,10 @@
         <div class="container">
             <h1 class="logo">NS<span>.</span></h1>
             <ul>
-                <li><a href="#about">À propos</a></li>
+                <li><a href="#about">Profil</a></li>
                 <li><a href="#skills">Compétences</a></li>
-                <li><a href="#experience">Expériences</a></li>
+                <li><a href="#projets">Projets & E4</a></li>
+                <li><a href="#experience">Parcours</a></li>
                 <li><a href="#veille">Veille</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -24,76 +26,115 @@
     <header>
         <div class="hero-content">
             <h1>Nolan <span>SICHE-RÉMY</span></h1>
-            <p>Étudiant Alternant BTS SIO SISR — Orientation Cybersécurité</p>
-            <a href="#experience" class="btn">Parcours & Projets</a>
+            <p>Étudiant Alternant BTS SIO SISR — Spécialisation Cybersécurité</p>
+            <div class="header-btns">
+                <a href="#projets" class="btn">Projets Réalisés</a>
+                <a href="CV_NOLAN.pdf" class="btn btn-outline" target="_blank"><i class="fas fa-file-pdf"></i> Mon CV</a>
+            </div>
         </div>
     </header>
 
     <section id="about" class="container">
-        <h2>Mon Projet Professionnel</h2>
-        <p>Actuellement en BTS SIO au Lycée Carcouêt, je souhaite poursuivre mes études en cybersécurité jusqu'à Bac+5. Mon objectif est d'évoluer vers les métiers de <strong>Pentester, Consultant ou RSSI</strong>. Passionné par le défi technique, je m'exerce régulièrement sur des plateformes comme RootMe et TryHackMe.</p>
+        <h2><i class="fas fa-user-graduate"></i> Mon Projet Professionnel</h2>
+        <p>Actuellement en <strong>BTS SIO (Services Informatiques aux Organisations)</strong> option SISR au Lycée Carcouêt, je suis en alternance chez <strong>Mecachrome</strong>à Saint-Adnré-des-Eaux. Mon objectif est d'atteindre un Bac+5 dans le domaine de la cybersécurité pour devenir <strong>Pentester ou Responsable de la Sécurité des Systèmes d'Information (RSSI)</strong>.</p>
+        <p>Je développe mes compétences techniques sur RootMe et TryHackMe pour parfaire ma culture de la défense et de l'intrusion.</p>
     </section>
 
     <section id="skills" class="bg-light">
         <div class="container">
-            <h2>Compétences Techniques</h2>
+            <h2><i class="fas fa-tools"></i> Compétences Techniques</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>Systèmes & Réseaux</h3>
+                    <h3><i class="fas fa-network-wired"></i> Systèmes & Réseaux</h3>
                     <ul>
-                        <li>Windows (10/11, Server), Linux (Debian, Kali)</li>
-                        <li>DHCP, DNS, VLAN, Routage (Cisco, Aruba)</li>
-                        <li>Virtualisation : VMware, VirtualBox</li>
+                        <li>Windows Server (AD, GPO, DNS, DHCP)</li>
+                        <li>Linux Debian & Administration CLI</li>
+                        <li>Routage & Switching (VLAN, Cisco, Aruba)</li>
+                        <li>Virtualisation : VMware ESXi & VirtualBox</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>Cybersécurité & Services</h3>
+                    <h3><i class="fas fa-shield-alt"></i> Sécurité & Services</h3>
                     <ul>
-                        <li>Active Directory, Apache, NGINX, SSH, WAPT</li>
-                        <li>Analyse : Wireshark, Nmap</li>
-                        <li>CTF : RootMe, HTB, TryHackMe</li>
+                        <li>Déploiement et sécurisation (SSH, Apache, NGINX)</li>
+                        <li>Audit de vulnérabilités (Nmap, Wireshark)</li>
+                        <li>Gestion de parc centralisée (WAPT)</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>Développement</h3>
+                    <h3><i class="fas fa-code"></i> Développement & Scripting</h3>
                     <ul>
-                        <li>Scripts : Python, PowerShell, Bash</li>
-                        <li>Web & Data : HTML/CSS, PHP, SQL</li>
+                        <li>Automatisation : PowerShell & Bash</li>
+                        <li>Scripting orienté sécurité : Python</li>
+                        <li>Web : PHP, HTML/CSS, SQL</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="projets" class="container">
+        <h2><i class="fas fa-project-diagram"></i> Projets & Réalisations (Épreuve E4)</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="badge">Alternance</div>
+                <h3>Migration de Parc W11</h3>
+                <p>Pilotage de la migration de 100+ postes. Utilisation de <strong>WAPT</strong> pour le déploiement de paquets et la gestion des mises à jour.</p>
+                <p><small>Compétences : Support, Déploiement, Gestion de parc.</small></p>
+            </div>
+            <div class="skill-card">
+                <div class="badge">Projet École</div>
+                <h3>Laboratoire</h3>
+                <p>Mise en place d'un environnement virtualisé pour s'entraîner.</p>
+                <p><small>Compétences : Sécurité, Virtualisation, Windows Server.</small></p>
+            </div>
+            <div class="skill-card">
+                <div class="badge">Web</div>
+                <h3>Madling-Comic</h3>
+                <p>Site vitrine pour la bande déssiné de mon frère.</p>
+                <a href="https://madling-comic.com" target="_blank" class="project-link">Voir le projet <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="Tableau_Synthese_Nolan.pdf" class="btn btn-outline"><i class="fas fa-table"></i> Consulter mon Tableau de Synthèse (E4)</a>
+        </div>
+    </section>
+
     <section id="experience" class="container">
-        <h2>Parcours Professionnel</h2>
+        <h2><i class="fas fa-briefcase"></i> Parcours Professionnel</h2>
         <div class="timeline">
             <div class="exp-item">
                 <h4>Apprenti Technicien Système & Réseau</h4>
-                <p class="company">Mecachrome Saint-André | Septembre 2025 - Présent</p>
-                <p>Apprentissage axé sur l'administration système et la sécurisation des infrastructures.</p>
+                <p class="company">MECACHROME Saint-André | Septembre 2025 - Présent</p>
+                <p>Administration système, gestion de parc et sécurisation des infrastructures.</p>
             </div>
             <div class="exp-item">
                 <h4>Technicien Informatique (Intérim & Stage)</h4>
-                <p class="company">Mecachrome Saint-André | Mai - Août 2025</p>
-                <p>Migration de parc, support utilisateur et maintenance réseau.</p>
+                <p class="company">MECACHROME Saint-André | Mai - Août 2025</p>
+                <p>Support utilisateur, maintenance réseau et projets de déploiement.</p>
             </div>
         </div>
     </section>
 
     <section id="veille" class="bg-light">
         <div class="container">
-            <h2>Veille Technologique</h2>
-            <div class="veille-content">
-                <div class="skill-card full-width">
-                    <h3>Évolution et Sécurité de Windows 10 & 11</h3>
-                    <p>Dans le cadre de mes missions chez Mecachrome, j'ai piloté des migrations de postes de Windows 10 vers Windows 11. Cette responsabilité m'a poussé à mettre en place une veille active sur :</p>
-                    <ul class="custom-list">
-                        <li><strong>Compatibilité matérielle :</strong> Suivi des prérequis (TPM 2.0, Secure Boot) et gestion des bugs de déploiement.</li>
-                        <li><strong>Mises à jour mensuelles (Patch Tuesday) :</strong> Analyse des correctifs de sécurité pour anticiper les instabilités système.</li>
-                        <li><strong>Optimisation :</strong> Recherche de solutions pour les problèmes de performance post-migration et gestion des stratégies de groupe (GPO).</li>
+            <h2><i class="fas fa-eye"></i> Veille Technologique</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Sécurité Windows</h3>
+
+                    <ul>
+                        <li>Suivi des mises à jour (KB) Windows 22,23,24,25H2 Microsoft et des évolutions de ces mises à jour.</li>
+                        <li>Sources : Microsoft, Reddit</li>
                     </ul>
-                    <p><em>Outils utilisés : Windows Release Health, Microsoft Support, forums spécialisés (Reddit SysAdmin), sites d'actualités tech (IT-Connect, ZDNet).</em></p>
+                </div>
+                <div class="skill-card">
+                    <h3>Menaces & Vulnérabilités (CERT-FR)</h3>
+                    <p>Veille active sur les bulletins d'alerte de l'ANSSI.</p>
+                    <ul>
+                        <li>Flux RSS : CERT-FR, IT-Connect</li>
+                        <li>Outil de centralisation : Outlook</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -102,10 +143,11 @@
     <footer id="contact">
         <div class="container">
             <h2>Me Contacter</h2>
-            <p>Email : <a href="mailto:nolan.siche@gmail.com">nolan.siche@gmail.com</a> | Tél : 07 61 54 23 25</p>
-            <div class="socials">
-                <p>Localisation : Nantes / Saint-Joachim</p>
-                <p>Langues : Anglais (B2/C1) | Permis : B et A2</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:nolan.siche@gmail.com">nolan.siche@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/nolan-siche-r%C3%A9my-3282ba274/" target="_blank">Profil LinkedIn</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Nantes / Saint-Joachim | <i class="fas fa-car"></i> Permis B & A2</p>
+                <p><i class="fas fa-language"></i> Anglais : Niveau B2/C1</p>
             </div>
         </div>
     </footer>
